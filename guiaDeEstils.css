@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color1: #92C7CF;
+    --boto: #AAD7D9;
+    --color3: #FBF9F1;
+    --color4: #E5E1DA;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADER */
+header {
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.logoHeader img {
+    width: 150px;
+}
+
+.menuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menuHeader a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: black;
+}
+
+/* PALETA I FONT */
+.divGeneralPaletaDeColors {
+    margin: 30px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.colorFont h2 {
+    font-family: 'Montserrat';
+    font-size: 2em;
+}
+
+.colorFont img {
+    width: 280px;
+}
+
+.colorFont2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.colorFont2 h2 {
+    font-family: 'Montserrat';
+    font-size: 2em;
+}
+
+.colorFont2 img {
+    width: 475px;
+}
+
+/* BOTÓ I ICON */
+.divGeneralBotoIcones {
+    margin: 30px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.botoIcon h2 {
+    font-family: 'Montserrat';
+    font-size: 2em;
+}
+
+.botoIcon .bt1 {
+    width: 150px;
+    height: 50px;
+
+    border: 2px solid var(--boto);
+    border-radius: 50px;
+
+    margin: 100px 0px;
+
+    text-decoration: none;
+    font-family: 'Montserrat';
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoIcon .bt2 {
+    width: 150px;
+    height: 50px;
+
+    border: 2px solid var(--boto);
+    border-radius: 50px;
+    background-color: var(--boto);
+
+    margin: 100px 0px;
+
+    text-decoration: none;
+    font-family: 'Montserrat';
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoIcon2 h2 {
+    font-family: 'Montserrat';
+    font-size: 2em;
+    padding-bottom: 90px;
+}
+
+.botoIcon2 img {
+    width: 175px;
+}

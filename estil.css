@@ -1,0 +1,1094 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color1: #92C7CF;
+    --boto: #AAD7D9;
+    --color3: #FBF9F1;
+    --color4: #E5E1DA;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* BOTÓ */
+.bt {
+    width: 150px;
+    height: 50px;
+
+    border: 2px solid var(--boto);
+    border-radius: 50px;
+
+    margin: 100px 0px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt button {
+    width: 150px;
+    height: 50px;
+
+    border: 0px;
+    border-radius: 50px;
+
+    background-color: transparent;
+    font-family: 'Montserrat';
+    cursor: pointer;
+
+    transition: 0.7s ease-out;
+}
+
+.bt button:hover {
+    background-color: var(--boto);
+}
+
+/* HEADER */
+header {
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.logoHeader img {
+    width: 150px;
+}
+
+.menuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menuHeader a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-top: 3px solid var(--color1);
+
+    padding-top: 50px;
+    margin-left: 70px;
+    margin-top: 80px;
+    width: 1390px;
+}
+
+.divFooterNavegacio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 300px;
+}
+
+.footerNavegacio {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.footerNavegacio a {
+    text-decoration: none;
+    font-weight: 200;
+    color: black;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerLogo img {
+    width: 70px;
+}
+
+/* PORTADA */
+.divGeneralPortadaInici {
+    margin: 0px 70px;
+
+    height: 80vh;
+}
+
+.divGeneralPortadaInici img {
+    height: auto;
+    width: 100%;
+}
+
+/* SOBRE EL MEU */
+.divGeneralSobreElMeu {
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.divGeneralSobreElMeu h2 {
+    font-family: 'Montserrat';
+    font-size: 4em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.divGeneralSobreElMeu p {
+    font-family: 'Montserrat';
+    font-size: 1.3em;
+    font-weight: 100;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.fotoSobreElMeu {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+/* VOLUNTARIATS MÉS POPULARS */
+.divGeneralVoluntariatsMesPopulars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divTitolVoluntariatsMesPopulars h2 {
+    font-family: 'Montserrat';
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.divVoluntariatsMesPopulars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* VOLUNTARIAT POPULAR 1 */
+.divVoluntariatsMesPopulars1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: popular1 1s ease-out; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    transform: translateX(-20000px);
+}
+
+@keyframes popular1 {
+    from {
+        transform: translateX(2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divVoluntariatsMesPopulars1 img {
+    width: 420px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.divVoluntariatsMesPopulars1-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars1-2 p {
+    text-align: left;
+    font-family: 'Montserrat';
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars1-2 img {
+    width: 50px;
+}
+
+/* VOLUNTARIAT 2 */
+.divVoluntariatsMesPopulars2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: popular2 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s; 
+    transform: translateX(-2000px);
+}
+
+@keyframes popular2 {
+    from {
+        transform: translateX(2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divVoluntariatsMesPopulars2 img {
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars2-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars2-2 p {
+    text-align: left;
+    font-family: 'Montserrat';
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars2-2 img {
+    width: 50px;
+}
+
+/* VOLUNTARIAT POPULAR 3 */
+.divVoluntariatsMesPopulars3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: popular3 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+    transform: translateX(-20000px);
+}
+
+@keyframes popular3 {
+    from {
+        transform: translateX(2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divVoluntariatsMesPopulars3 img {
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars3-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars3-2 p {
+    text-align: left;
+    font-family: 'Montserrat';
+    width: 420px;
+}
+
+.divVoluntariatsMesPopulars3-2 img {
+    width: 50px;
+    background: transparent;
+}
+
+
+.divImgCuaVoluntariats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    width: 420px;
+}
+
+.divImgCuaVoluntariats p {
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+
+.divImgCuaVoluntariats button {
+    width: 150px;
+    height: 40px;
+
+    border-radius: 50px;
+    border: 2px solid var(--boto);
+
+    background-color: transparent;
+    font-family: 'Montserrat';
+    cursor: pointer;
+
+    transition: 0.5s all;
+}
+
+.divImgCuaVoluntariats button:hover {
+    background-color: var(--boto);
+}
+
+/* GALERIA */
+.divGeneralGaleria {
+    margin: 70px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.divGeneralGaleria h2 {
+    font-family: 'Montserrat';
+    font-size: 4em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.divGaleriaAdalt {
+    animation: galeria1 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes galeria1 {
+    from {
+        transform: translateX(-2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divGaleriaAdalt img {
+    width: 453px;
+}
+
+.divGaleriaAbaix {
+    animation: galeria2 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes galeria2 {
+    from {
+        transform: translateX(2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divGaleriaAbaix img {
+    width: 453px;
+}
+
+.g1 {
+    transition: all 1s;
+    perspective: 1000;
+}
+
+.g1:hover {
+    transform:  translate(0, 200px) rotateX(90deg);
+    transition-delay: 1s;
+}
+
+.g2 {
+    transition: all 1s;
+}
+
+.g2:hover {
+    transform: rotateY(360deg);
+}
+
+.g3 {
+    animation-duration: 0s infinite;
+    transition: all 1s;
+}
+
+.g3:hover {
+    /* animation-name: color; */
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    transform: scale(1.2);
+}
+
+.g4 {
+    transition: all 1s ease-out;
+}
+
+.g4:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+}
+
+.g5 {
+    transition: all 1s ease-in;
+}
+
+.g5:hover {
+    transform: rotate(360deg);transform: rotate(360deg);
+}
+
+.g6 {
+    transition: 1s ease-in-out;
+}
+
+.g6:hover {
+    filter: hue-rotate(90deg);
+}
+
+/* @keyframes color {
+    0%{
+        border-color: aqua;
+    }
+
+    25%{
+        background-color: red;
+    }
+
+    50%{
+        background-color: greenyellow;
+    }
+
+    75%{
+        background-color: yellow;
+    }
+
+    100%{
+        background-color: palevioletred;
+    }
+} */
+
+
+/* CATEGORIES VOLUNTARIAT */
+.divGeneralCategoriesVoluntariats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CATEGORIA SOCIAL */
+.divGeneralVoluntariats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divTitolVoluntariats h2 {
+    font-family: 'Montserrat';
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.divVoluntariats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* VOLUNTARIAT SOCIAL 1 */
+.divVoluntariats1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: popular1 1s ease-out; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    transform: translateX(-20000px);
+}
+
+@keyframes popular1 {
+    from {
+        transform: translateX(2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divVoluntariats1 img {
+    width: 420px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.divVoluntariats1-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 420px;
+}
+
+.divVoluntariats1-2 p {
+    text-align: left;
+    font-family: 'Montserrat';
+    width: 420px;
+}
+
+.divVoluntariats1-2 img {
+    width: 50px;
+}
+
+/* VOLUNTARIAT SOCIAL 2 */
+.divVoluntariats2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: popular2 1s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s; 
+    transform: translateX(-2000px);
+}
+
+@keyframes popular2 {
+    from {
+        transform: translateX(2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divVoluntariats2 img {
+    width: 420px;
+}
+
+.divVoluntariats2-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 50px;
+}
+
+.divVoluntariats2-2 p {
+    text-align: left;
+    font-family: 'Montserrat';
+    width: 420px;
+}
+
+.divVoluntariats2-2 img {
+    width: 50px;
+}
+
+.foto {
+    height: 280px;
+    border-radius: 5px;
+}
+
+/* VOLUNTARIAT SOCIAL 3 */
+.divVoluntariats3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: popular3 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+    transform: translateX(-20000px);
+}
+
+@keyframes popular3 {
+    from {
+        transform: translateX(2000px);
+    } 
+    to {
+        transform: translateX(0);
+    }
+}
+
+.divVoluntariats3 img {
+    width: 420px;
+}
+
+.divVoluntariats3-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 420px;
+}
+
+.divVoluntariats3-2 p {
+    text-align: left;
+    font-family: 'Montserrat';
+    width: 420px;
+}
+
+.divVoluntariats3-2 img {
+    width: 50px;
+}
+
+/* FORMULARI CONTACTE */
+.titolContacte {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.divGeneralFormulariContacte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 70px;
+}
+
+#formContacte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+    font-family: 'Montserrat';
+}
+
+#formContacte input {
+    width: 450px;
+    height: 50px;
+    padding: 10px;
+
+    font-family: 'Montserrat';
+    
+    border: 0px;
+    border-radius: 10px;
+    background-color: var(--color3);
+}
+
+#formContacte textarea {
+    resize: none;
+    width: 450px;
+    height: 150px;
+    padding: 10px;
+
+    font-family: 'Montserrat';
+    
+    border: 0px;
+    border-radius: 10px;
+    background-color: var(--color3);
+}
+
+/* XARXES SOCIALS */
+.divGeneralXarxesSocials {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 70px;
+}
+
+.divGeneralXarxesSocials h2 {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 4em;
+    text-align: center;
+}
+
+.iconesXarxesSocials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.iconesXarxesSocials img {
+    width: 150px;
+    transition: 1s ease;
+
+}
+
+.iconesXarxesSocials:hover img {
+    transform: rotate(-720deg);
+}
+
+/* FORMULARI APUNTA'T */
+.titolApuntat {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.divGeneralFormulariApuntat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 70px;
+}
+
+#formApuntat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+    font-family: 'Montserrat';
+}
+
+#formApuntat input {
+    width: 450px;
+    height: 50px;
+    padding: 10px;
+
+    font-family: 'Montserrat';
+    
+    border: 0px;
+    border-radius: 10px;
+    background-color: var(--color3);
+}
+
+#formApuntat select {
+    font-family: 'Montserrat';
+    padding: 10px;
+}
+
+#formApuntat option {
+    font-family: 'Montserrat';
+    padding: 30px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1100px) {
+    body {
+        overflow: hidden;
+    }
+
+    /* HEADER */
+    header {
+        width: auto;
+        margin: 0;
+        margin-bottom: 20px;
+        gap: 0px;
+        flex-direction:  column;
+    }
+
+    .logoHeader img {
+        width: 100px;
+    }
+
+    .menuHeader {
+        gap: 10px;
+        padding-right: 10px;
+    }
+
+    .bt {
+        margin: 5px 0px;
+    }
+
+    /* PORTADA */
+    .divGeneralPortadaInici {
+        margin: 0;
+        height: 200px;
+    }
+
+
+    /* SOBRE EL MEU */
+    .divGeneralSobreElMeu {
+        flex-direction: column;
+        margin: 0px 20px;
+        width: auto;
+    }
+
+    .divGeneralSobreElMeu h2 {
+        font-size: 2em;
+        font-weight: 400;
+        padding-top: 50px;
+    } 
+
+    .divGeneralSobreElMeu p {
+        font-size: 0.8em;
+        padding: 20px 0px;
+    }
+
+    .fotoSobreElMeu {
+        width: 200px;
+        height: 200px;
+        padding: 10px 0px;
+    }
+
+    /* VOLUNTARIS MÉS POPUPLARS */
+    .divGeneralVoluntariatsMesPopulars {
+        flex-direction: column;
+        width: auto;
+        margin: 20px;
+    }
+
+    .divVoluntariatsMesPopulars {
+        flex-direction: column;
+    }
+
+    /* VOLUNTARIAT POPULAR 1,2 i 3 */
+    .divTitolVoluntariatsMesPopulars h2 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .divVoluntariatsMesPopulars1 img {
+        width: 330px;
+    }
+
+    .divVoluntariatsMesPopulars1-2 {
+        width: 330px;
+    }
+    
+    .divVoluntariatsMesPopulars1-2 p {
+        width: 330px;
+    }
+    
+    .divVoluntariatsMesPopulars1-2 img {
+        width: 30px;
+    }
+
+    .divVoluntariatsMesPopulars2 img {
+        width: 330px;
+    }
+
+    .divVoluntariatsMesPopulars2-2 {
+        width: 330px;
+    }
+    
+    .divVoluntariatsMesPopulars2-2 p {
+        width: 330px;
+    }
+    
+    .divVoluntariatsMesPopulars2-2 img {
+        width: 30px;
+    }
+
+    .divVoluntariatsMesPopulars3 img {
+        width: 330px;
+    }
+
+    .divVoluntariatsMesPopulars3-2 {
+        width: 330px;
+    }
+    
+    .divVoluntariatsMesPopulars3-2 p {
+        width: 330px;
+    }
+    
+    .divVoluntariatsMesPopulars3-2 img {
+        width: 30px;
+    }
+
+    .divImgCuaVoluntariats {
+        width: 330px;
+    }
+
+    /* GALERIA */
+    .divGeneralGaleria {
+        width: auto;
+        margin: 20px;
+    }
+
+    .divGeneralGaleria h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .divGaleriaAdalt img {
+        width: 330px;
+    }
+
+    .divGaleriaAbaix img {
+        width: 330px;
+    }
+
+    .divGaleriaAbaix, .divGaleriaAdalt {
+        flex-direction: column;
+        width: 350px;
+    }
+
+    /* CATEOGRIA VOLUNTARIATS */
+    .divGeneralCategoriesVoluntariats {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* VOLUNTARIATS SOCIAL, MEDIA AMBIENT i EXTRANGER */
+    .divGeneralVoluntariats {
+        flex-direction: column;
+        width: auto;
+        margin: 20px;
+    }
+
+    .divVoluntariats {
+        flex-direction: column;
+    }
+
+    .divTitolVoluntariats h2 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .divVoluntariats1 img {
+        width: 330px;
+    }
+
+    .divVoluntariats1-2 {
+        width: 330px;
+    }
+    
+    .divVoluntariats1-2 p {
+        width: 330px;
+    }
+    
+    .divVoluntariats1-2 img {
+        width: 30px;
+    }
+
+    .divVoluntariats2 img {
+        width: 330px;
+    }
+
+    .divVoluntariats2-2 {
+        width: 330px;
+    }
+    
+    .divVoluntariats2-2 p {
+        width: 330px;
+    }
+    
+    .divVoluntariats2-2 img {
+        width: 30px;
+    }
+
+    .divVoluntariats3 img {
+        width: 330px;
+    }
+
+    .divVoluntariats3-2 {
+        width: 330px;
+    }
+    
+    .divVoluntariats3-2 p {
+        width: 330px;
+    }
+    
+    .divVoluntariats3-2 img {
+        width: 30px;
+    }
+
+    /* FORMULARI APUNTA'T */
+    .titolApuntat {
+        font-size: 2em;
+    }
+
+    .divGeneralFormulariApuntat {
+        margin: 15px 5px;
+    }
+
+    #formApuntat input {
+        width: 200px;
+    }
+
+    /* FORMULARI CONTACTE */
+    .titolContacte {
+        font-size: 2em;
+    }
+
+    .divGeneralFormulariContacte {
+        margin: 35px 5px;
+    }
+
+    #formContacte input {
+        width: 200px;
+    }
+
+    #formContacte textarea {
+        width: 220px;
+    }
+
+    /* XARXES SOCIALS */
+    .divGeneralXarxesSocials {
+        margin: 15px 5px;
+    }
+
+    .divGeneralXarxesSocials h2 {
+        font-size: 2em;
+    }
+
+    .iconesXarxesSocials {
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+    footer {
+        width: auto;
+        gap: 20px;
+        margin-left: 0;
+        margin: 0;
+    }
+
+    .divFooterNavegacio {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
